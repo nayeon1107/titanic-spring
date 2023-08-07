@@ -20,8 +20,21 @@ gradle clean build
 ```bash
 gradle test
 ```
+#### package & run
+```bash
+gradle bootJar
+java -jar build/libs/titanic-user-api-0.1.0.jar app.jar
+```
 
 
 ## 📢 DEPLOY
 - fly.io
 - docker
+```bash
+fly launch
+docker build -t titanic-user-api:0.1.0 .
+
+```
+
+## Reference
+- https://spring.io/guides/topicals/spring-boot-docker/
